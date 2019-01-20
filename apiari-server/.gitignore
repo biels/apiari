@@ -1,0 +1,5 @@
+generated
+.idea/
+node_modules/
+*.mdb
+*.accdb

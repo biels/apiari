@@ -1,0 +1,52 @@
+type Hive {
+  id: ID! @unique
+  code: String! @unique
+  createdAt: DateTime!
+  comment: String
+}
+
+type Visit {
+  id: ID! @unique
+  date: DateTime!
+  comment: String
+
+  #General Info
+  weight: Float
+  frames: Int
+  breedFrames: Int
+
+  #Extraction
+  extractedKg: Float
+
+  #Dvision
+  child: Hive
+
+  #Treatment
+  treatmentType: Treatment
+
+  #Feeding
+  feedingType: FeedingType
+  feedingKg: Float
+
+  #Location
+  location: Location
+
+
+}
+
+type Treatment {
+  id: ID! @unique
+  name: String!
+}
+
+type FeedingType {
+  id: ID! @unique
+  name: String!
+}
+
+type Location {
+  id: ID! @unique
+  name: String!
+  latitude: Float
+  longitude: Float
+}
