@@ -27,7 +27,9 @@ class HivesViewMaster extends Component<CentersViewMasterProps> {
             associate={this.props.associate}
             baseNegativeOffset={170}
             height={'90vh'}
-            columnDefs={[]}
+            columnDefs={[
+
+            ]}
             frameworkComponents={{}}
             actions={(entity) => [
                 { name: 'refresh', text: 'Refresca' },

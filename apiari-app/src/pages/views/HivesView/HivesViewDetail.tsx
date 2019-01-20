@@ -4,6 +4,7 @@ import _ from 'lodash';
 import {Entity} from 'react-entity-plane';
 import { Intent, NonIdealState, Tag } from '@blueprintjs/core';
 import { clientDisplayName } from '../../../application/utils';
+import HiveView from '../../../entities/components/HiveView';
 
 
 const Container = styled.div`
@@ -39,9 +40,9 @@ export interface CentersViewDetailProps {
 class HivesViewDetail extends Component<CentersViewDetailProps> {
     render() {
         return <Entity>
-            {({selectedItem: center}) => {
+            {(entity) => {
                 return <Container>
-
+                    <HiveView entity={entity} editing/>
                 </Container>
             }}
         </Entity>

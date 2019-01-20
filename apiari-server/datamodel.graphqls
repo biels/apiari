@@ -3,6 +3,7 @@ type Hive {
   code: String! @unique
   createdAt: DateTime!
   comment: String
+  visits: [Visit!]!
 }
 
 type Visit {

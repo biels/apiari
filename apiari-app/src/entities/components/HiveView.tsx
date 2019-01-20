@@ -12,6 +12,7 @@ export interface HiveViewProps {
     name?
     relation?
     entity?
+    editing?
 }
 
 class HiveView extends Component<HiveViewProps> {
@@ -19,7 +20,7 @@ class HiveView extends Component<HiveViewProps> {
         return <EntityView {...this.props} wrapper={Container}>
             {(entity, mode, field, form) => {
                 return <React.Fragment>
-                    {field('name')}
+                    {field('code')}
                 </React.Fragment>;
             }}
         </EntityView>;

@@ -17,6 +17,16 @@ export const hiveInfo: EntityInfo = {
         {
             name: 'code',
             label: 'Codi',
+            required: true,
+            type: EntityFieldType.string
+        },{
+            name: 'comment',
+            label: 'Comentaris',
+            type: EntityFieldType.textarea
+        },{
+            name: 'createdAt',
+            label: 'Data de creació',
+            type: EntityFieldType.date
         },
     ],
     components: {
