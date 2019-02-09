@@ -22,7 +22,6 @@ export interface CentersViewMasterProps {
 
 class HivesViewMaster extends Component<CentersViewMasterProps> {
     render() {
-        console.log('Entity', this.props.entity);
         return <EntityGrid
             associate={this.props.associate}
             baseNegativeOffset={170}

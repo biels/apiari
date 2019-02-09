@@ -19,7 +19,7 @@ export interface GeneralTabProps {
 class GeneralTab extends Component<GeneralTabProps> {
     render() {
         return <Container>
-            <Entity name={'hive'}>
+            <Entity name={'hive'} root>
                 {(entity) => {
                     return <HiveView entity={entity} editing/>;
                 }}

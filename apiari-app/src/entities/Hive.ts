@@ -3,6 +3,7 @@ import HiveView from './components/HiveView';
 import { EntityInfo } from 'react-entity-plane/src/types/entities';
 import { EntityFieldType } from 'react-entity-plane';
 import { hiveDetail, hiveMaster } from './fields/Hive';
+import { visitMaster } from './fields/Visit';
 
 
 export const hiveInfo: EntityInfo = {
@@ -11,7 +12,7 @@ export const hiveInfo: EntityInfo = {
         singular: 'Rusc',
         plural: 'Ruscs',
         gender: true,
-        icon: 'document'
+        icon: 'cube'
     },
     fields: [
         {
@@ -88,5 +89,26 @@ export const hiveInfo: EntityInfo = {
             `,
         },
     },
-    relations: {},
+    relations: {
+        visits: {
+            entityName: 'visit',
+            type: 'multi',
+            queries: {
+                all: {
+                    query: gql`
+                        query VisitsInHive($id: ID) {
+                            hive(where: {id: $id}) {
+                                id
+                                visits {
+                                    ...VisitMaster
+                                }
+                            }
+                        }
+                        ${visitMaster}
+                    `,
+                    selector: 'hive.visits',
+                },
+            },
+        },
+    },
 };

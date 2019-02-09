@@ -17,15 +17,16 @@ class HivePage extends Component<HivePageProps> {
                 {({ selectedItem }) => {
                     return <PageContextSpy>
                         {({ location, stack }) => {
-                            return _.get(selectedItem, 'name');
+                            return _.get(selectedItem, 'code');
                         }}
                     </PageContextSpy>;
                 }}
             </Entity>}
             subtitle={'Rusc'}
+            icon={'cube'}
             actions={[]}
-            renderCustomHeaderArea={() => <Entity name={'center'} fetchPolicy={'cache-only'} root>
-                {({ selectedItem: client }) => {
+            renderCustomHeaderArea={() => <Entity name={'hive'} fetchPolicy={'cache-only'} root>
+                {({ selectedItem: hive }) => {
                     return <div/>;
                 }}
             </Entity>}
