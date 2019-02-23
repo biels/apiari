@@ -2,14 +2,18 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import _ from 'lodash';
 import { EntityView } from 'react-c1';
+import { EntityViewProps } from 'react-c1/src/layout/EntityView';
 
 const Container = styled.div`
     display: grid;
     
 `;
 
-export interface VisitViewProps {
-
+export interface VisitViewProps extends EntityViewProps{
+    name?
+    relation?
+    entity?
+    editing?
 }
 
 class VisitView extends Component<VisitViewProps> {

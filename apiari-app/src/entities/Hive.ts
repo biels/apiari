@@ -12,7 +12,8 @@ export const hiveInfo: EntityInfo = {
         singular: 'Rusc',
         plural: 'Ruscs',
         gender: true,
-        icon: 'cube'
+        icon: 'cube',
+        render: (r) => r.code
     },
     fields: [
         {
@@ -27,7 +28,8 @@ export const hiveInfo: EntityInfo = {
         },{
             name: 'createdAt',
             label: 'Data de creació',
-            type: EntityFieldType.date
+            type: EntityFieldType.date,
+            create: false
         },
     ],
     components: {

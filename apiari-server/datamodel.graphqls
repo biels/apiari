@@ -3,11 +3,14 @@ type Hive {
   code: String! @unique
   createdAt: DateTime!
   comment: String
-  visits: [Visit!]!
+  visits: [Visit!]! @relation(name: "Visits")
 }
 
 type Visit {
   id: ID! @unique
+
+  hive: Hive @relation(name: "Visits")
+
   date: DateTime!
   comment: String
 
@@ -20,7 +23,7 @@ type Visit {
   extractedKg: Float
 
   #Dvision
-  child: Hive
+  child: Hive @relation(name: "ChildsInVisit")
 
   #Treatment
   treatmentType: TreatmentType

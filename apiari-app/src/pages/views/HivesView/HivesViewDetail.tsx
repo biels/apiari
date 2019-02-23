@@ -34,7 +34,7 @@ const MoreDetailsContainer = styled.div`
 
 
 export interface CentersViewDetailProps {
-
+    entity?
 }
 
 class HivesViewDetail extends Component<CentersViewDetailProps> {

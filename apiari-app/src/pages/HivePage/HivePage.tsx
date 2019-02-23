@@ -32,12 +32,6 @@ class HivePage extends Component<HivePageProps> {
             </Entity>}
             tabs={[
                 {
-                    name: 'general',
-                    displayName: 'General',
-                    render: () => {
-                        return <GeneralTab/>;
-                    },
-                }, {
                     name: 'visits',
                     displayName: 'Visites',
                     render: () => {
@@ -45,12 +39,19 @@ class HivePage extends Component<HivePageProps> {
                     },
                 },
                 {
-                    name: 'other',
-                    displayName: 'Altres...',
+                    name: 'general',
+                    displayName: 'Resum',
                     render: () => {
-                        return <div>Altres tabs...</div>;
+                        return <GeneralTab/>;
                     },
                 },
+                // {
+                //     name: 'other',
+                //     displayName: 'Altres...',
+                //     render: () => {
+                //         return <div>Altres tabs...</div>;
+                //     },
+                // },
             ]}
         />;
     }

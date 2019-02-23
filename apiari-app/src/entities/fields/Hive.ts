@@ -6,6 +6,9 @@ export const hiveMaster = gql`
         code
         comment
         createdAt
+        visits {
+            id
+        }
     }
 `;
 export const hiveDetail = gql`
@@ -14,5 +17,8 @@ export const hiveDetail = gql`
         code
         comment
         createdAt
+        visits {
+            id
+        }
     }
 `;

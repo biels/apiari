@@ -3,6 +3,10 @@ import gql from 'graphql-tag';
 export const visitMaster = gql`
     fragment VisitMaster on Visit{
         id
+        hive {
+            id
+            code
+        }
         date
         comment
         weight
@@ -15,6 +19,10 @@ export const visitMaster = gql`
 export const visitDetail = gql`
     fragment VisitDetail on Visit{
         id
+        hive {
+            id
+            code
+        }
         date
         comment
         weight
