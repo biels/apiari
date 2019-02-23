@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import _ from 'lodash';
-import { EntityView } from 'react-c1';
+import EntityView, { EntityViewProps } from 'react-c1/src/layout/EntityView';
 
 const Container = styled.div`
     display: grid;
     
 `;
 
-export interface LocationViewProps {
+export interface LocationViewProps extends EntityViewProps {
 
 }
 

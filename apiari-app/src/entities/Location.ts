@@ -13,7 +13,7 @@ export const locationInfo: EntityInfo = {
     fields: [
         {
             name: 'name',
-            label: 'Label',
+            label: 'Lloc',
         },
         {
             name: 'latitude',

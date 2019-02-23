@@ -33,6 +33,7 @@ class ApiariSidebar extends Component<ApiariSidebarProps> {
                         {iconName: 'home', tooltip: 'Inici', onClick: () => open('home')},
                         {iconName: 'dashboard', tooltip: 'Tauler de control', onClick: () => open('dashboard')},
                         {iconName: 'document', tooltip: 'Ruscs', onClick: () => open('hives')},
+                        {iconName: 'database', tooltip: 'Fitxers auxiliars', onClick: () => open('files')},
                         {iconName: 'settings', tooltip: 'Configuració', onClick: () => open('settings')},
                         {iconName: 'log-out', tooltip: 'Tanca la sessió', onClick: () => {this.props.logout();}},
                     ]}

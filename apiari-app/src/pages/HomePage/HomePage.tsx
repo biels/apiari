@@ -116,6 +116,8 @@ class HomePage extends Component<HomePageProps> {
                                                    onClick={() => navigate({ to: 'dashboard' })}/>
                                 <NewTabQuickAction name={'Ruscs'} icon={'cube'}
                                                    onClick={() => navigate({ to: 'hives' })}/>
+                                <NewTabQuickAction name={'Fitxers'} icon={'database'}
+                                                   onClick={() => navigate({ to: 'files' })}/>
                                 <NewTabQuickAction name={'Configuració'} icon={'settings'}
                                                    onClick={() => navigate({ to: 'settings' })}/>
 

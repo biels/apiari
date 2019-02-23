@@ -3,6 +3,7 @@ import HomePage from './HomePage/HomePage';
 import HivesPage from './HivesPage/HivesPage';
 import HivePage from './HivePage/HivePage';
 import SettingsPage from './SettingsPage/SettingsPage';
+import FilesPage from './FilesPage/FilesPage';
 
 
 export interface PagesInfo {
@@ -32,6 +33,11 @@ export const pages: PagesInfo = {
         component: HivePage,
         title: 'Rusc',
         singleInstance: false
+    },
+    files: {
+        component: FilesPage,
+        title: 'Fitxers auxiliars',
+        singleInstance: true
     },
     settings: {
         component: SettingsPage,
