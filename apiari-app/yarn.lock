@@ -65,7 +65,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.2.0":
+"@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1":
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.3.1.tgz#574b03e8e8a9898eaf4a872a92ea20b7846f6f2a"
   integrity sha512-7jGW8ppV0ant637pIqAcFfQDDH1orEPGJb8aXfUozuCU3QqX7rX4DA8iwrbPrR1hcH0FTTHz47yQnk+bl5xHQA==
@@ -80,22 +80,6 @@
     esutils "^2.0.2"
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
-
-"@blueprintjs/core@^3.10.0":
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/core/-/core-3.10.0.tgz#9f760168356cc96df5456ddf5b050af48dac52e9"
-  integrity sha512-GAxyOQBwRaVEaE/5KVRVuhYuo3ihjn6uhKuzyBta6kHvdBdk5m+1S3v0o1bzzvnJHyeJzBZQOq684q+FJCLNoQ==
-  dependencies:
-    "@blueprintjs/icons" "^3.4.0"
-    "@types/dom4" "^2.0.0"
-    classnames "^2.2"
-    dom4 "^2.0.1"
-    normalize.css "^8.0.0"
-    popper.js "^1.14.1"
-    react-popper "^1.0.0"
-    react-transition-group "^2.2.1"
-    resize-observer-polyfill "^1.5.0"
-    tslib "^1.9.0"
 
 "@blueprintjs/core@^3.11.0":
   version "3.11.0"
@@ -139,7 +123,7 @@
     react-day-picker "^7.1.10"
     tslib "^1.9.0"
 
-"@blueprintjs/datetime@^3.7.0":
+"@blueprintjs/datetime@^3.7.1":
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/@blueprintjs/datetime/-/datetime-3.7.1.tgz#6741f68df94bbe6221a41feaaafc4d4539c42241"
   integrity sha512-XV0fvq7uWrSlT8PDZ7oM+Rb6bF74I0k6/uw9XLJZ9hGrEPgsyd1K6QjVLFxc1Pnn5++1lDMtGlZC6x9nqCw1JA==
@@ -147,14 +131,6 @@
     "@blueprintjs/core" "^3.13.0"
     classnames "^2.2"
     react-day-picker "^7.1.10"
-    tslib "^1.9.0"
-
-"@blueprintjs/icons@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/icons/-/icons-3.4.0.tgz#893250c32dbc09add6b988f1ed27b239d6aea6a5"
-  integrity sha512-e7YqPzDYjXJquBD4+ZAKkIcVt52MusaEb7mbYGb8ikVXS3wVDhYOc+5csMK++uwMzIm0fqmFUZe8We3eeegprw==
-  dependencies:
-    classnames "^2.2"
     tslib "^1.9.0"
 
 "@blueprintjs/icons@^3.5.0":
@@ -173,21 +149,21 @@
     classnames "^2.2"
     tslib "^1.9.0"
 
-"@blueprintjs/select@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/select/-/select-3.4.0.tgz#eead75796fdbe8273bb52b1d6ae0dc2816579f6b"
-  integrity sha512-lWPioIs95cPOtbJjPZhO+B5u2dTiOCWyl5fAx8klbgrDppAXSbwpzCbpzD8+5LsbA5xXNRt8Qhss3pX9jE6XJg==
-  dependencies:
-    "@blueprintjs/core" "^3.10.0"
-    classnames "^2.2"
-    tslib "^1.9.0"
-
 "@blueprintjs/select@^3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@blueprintjs/select/-/select-3.5.0.tgz#72ec09c3096ff327fb4f2e50cd95178fd9801487"
   integrity sha512-6TQAqdShmy3cYJb/BVlZOOwxuZvUNcLxG2FO8D/n8AfZp0tcuuK3lPnKJ2lEksqKWUzGOuV6fNtX3yeVpG/LIg==
   dependencies:
     "@blueprintjs/core" "^3.11.0"
+    classnames "^2.2"
+    tslib "^1.9.0"
+
+"@blueprintjs/select@^3.6.1":
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/@blueprintjs/select/-/select-3.6.1.tgz#d9ffe9f09ac0c785feb33e5af6afd9c4659e0957"
+  integrity sha512-LLq0v60haWkLE/Nka7TbLhrTBBm3QfzvO3t2KrbKXqQhChFHnrAbXeltGUBaRFsqes9idkcA2MEZMu6LQ6a5Zw==
+  dependencies:
+    "@blueprintjs/core" "^3.13.0"
     classnames "^2.2"
     tslib "^1.9.0"
 
@@ -2787,12 +2763,24 @@ final-form-focus@^1.1.0:
   resolved "https://registry.yarnpkg.com/final-form-focus/-/final-form-focus-1.1.0.tgz#a4b0e6792dda637461d448a20f594d57e3380411"
   integrity sha512-sWmW50rjNFMwItJk+CkuelRmOC6PHwabE/awuJN/YR0T8oWkDH5DV/MwnjJ5iCKpXf6f1+gZLBZkLeeRGvENOw==
 
+final-form-focus@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/final-form-focus/-/final-form-focus-1.1.2.tgz#8ea5c4bd802e220cebaa47a587bb0be164eb6806"
+  integrity sha512-Gd+Bd2Ll7ijo3/sd6kJ/bwLkhc2bUJPxTON6fIqee/008EJpACWhT+zoWCm9q6NcfMcWRS+Sp5ikRX8iqdXeGQ==
+
 final-form@^4.11.0:
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/final-form/-/final-form-4.11.0.tgz#81750bda11b82c3ddf7b27092f29ebe427f8a560"
   integrity sha512-uO0VhAEbWvV8LHBpBHoIpbYqonYBXyd8gpTYFEAPCHEy5tcNqdVX4EnWQoxKl//+U9Vk0kTUsnPOWiBP2PiOUg==
   dependencies:
     "@babel/runtime" "^7.1.5"
+
+final-form@^4.11.1:
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/final-form/-/final-form-4.11.1.tgz#cf84a995a75140727c3676647d7cdb858869cb22"
+  integrity sha512-GuRAcbUE+vs/IFcvsRxMAaz0MQp5QaJKXU8FnNf4qlsVDuKoAyvDJGvvDsSTSgQDixavoxPmqwzJOVXrf0Hw1w==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
 
 finalhandler@1.1.1:
   version "1.1.1"
@@ -4909,6 +4897,11 @@ moment@*, moment@^2.23.0:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.23.0.tgz#759ea491ac97d54bac5ad776996e2a58cc1bc225"
   integrity sha512-3IE39bHVqFbWWaPOMHZF98Q9c3LDKGTmypMiTM2QygGXXElkFWIH7GxfmlwmY2vwa+wmNsoYZmG2iusf1ZjJoA==
 
+moment@^2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -6325,26 +6318,26 @@ react-apollo@^2.4.0:
     lodash.isequal "^4.5.0"
     prop-types "^15.6.0"
 
-react-c1@^1.5.28:
-  version "1.5.28"
-  resolved "https://registry.yarnpkg.com/react-c1/-/react-c1-1.5.28.tgz#fce6a9fe2639d6937349fb630dff6eb21f57f720"
-  integrity sha512-TmVMC1+Tpx3xC6iqoA1lX5BnQMAmW/rJBAk9X0eJur1gsig/lytPxTKiJMiOW8IYJQfphW9rBipz+2Istvo2Yg==
+react-c1@^1.5.33:
+  version "1.5.33"
+  resolved "https://registry.yarnpkg.com/react-c1/-/react-c1-1.5.33.tgz#ccb2d87c4a5a5e33c52b114a4c4856171e8279f2"
+  integrity sha512-HXb4KY29lDSrcsKP3/O4hAV4tNuUW5f6jWza9pi4aPal5/3UjOq3GtAtRrQPWsyKy9+qVPveCOYa5YZU56b3qQ==
   dependencies:
-    "@blueprintjs/datetime" "^3.7.0"
-    "@blueprintjs/select" "^3.4.0"
+    "@blueprintjs/datetime" "^3.7.1"
+    "@blueprintjs/select" "^3.6.1"
     "@types/moment" "^2.13.0"
     ag-grid-community "^19.1.4"
     ag-grid-react "^19.1.2"
     deep-object-diff "^1.1.0"
-    final-form "^4.11.0"
-    final-form-focus "^1.1.0"
-    moment "^2.23.0"
+    final-form "^4.11.1"
+    final-form-focus "^1.1.2"
+    moment "^2.24.0"
     object-diff "^0.0.4"
-    react-entity-plane "^1.0.11"
+    react-entity-plane "^1.0.14"
     react-final-form "^4.0.2"
-    react-final-form-listeners "^1.0.1"
-    react-navigation-plane "^2.0.0"
-    react-sortable-hoc "^1.5.3"
+    react-final-form-listeners "^1.0.2"
+    react-navigation-plane "^2.0.1"
+    react-sortable-hoc "^1.6.1"
     react-text-mask "^5.4.3"
     text-mask-addons "^3.8.0"
 
@@ -6383,14 +6376,21 @@ react-dom@^16.4.2, react-dom@^16.6.3:
     prop-types "^15.6.2"
     scheduler "^0.11.2"
 
-react-entity-plane@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/react-entity-plane/-/react-entity-plane-1.0.11.tgz#bd881487ec972cb977924e6afebb5c120a18dd04"
-  integrity sha512-pndgB947pqpcg5l2uC3/JbsX0qcc6QI1hYiBU0myIL5lN0r2SmldAQFZaeC/LCkIF6yc7OA+E4+aJg5ZXa6wyg==
+react-entity-plane@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/react-entity-plane/-/react-entity-plane-1.0.14.tgz#d82d5e24f691e99aedd2411e49ec3ee1de57227f"
+  integrity sha512-S9JSXYDIOnTYrs/Nmxxxn6tTDkrZ8dc02Kqt0rL4GKibJPlfpI5LZnY+2x08IQ3MTA8DiA8X5KudSIoSnuXjvQ==
   dependencies:
     deep-object-diff "^1.1.0"
 
-react-final-form-listeners@^1.0.1, react-final-form-listeners@latest:
+react-final-form-listeners@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-final-form-listeners/-/react-final-form-listeners-1.0.2.tgz#b52da984300281cf1f69a6412e86df6249e2bf1c"
+  integrity sha512-AaUUHcXRhD3esC80yUfYPI8FJ3TUiMu0f4hk18QL8NMCWjokg6NWS32WkRJsH3bLWDoiy7+uNVOAAyO/XoupyA==
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+
+react-final-form-listeners@latest:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-final-form-listeners/-/react-final-form-listeners-1.0.1.tgz#1604bdaa4b8a2ee16bf6bafadd8f977e359c9900"
   integrity sha512-RtxE9VtB9hp0Buro3VgtB4CpdpEYyVueJQy9lZ7gYMVBRzAT3t3+Bvtu2kmxOfwmWvMyL8jts2HPAcTGNJdA2Q==
@@ -6432,13 +6432,6 @@ react-namespaces@^1.2.0:
     lodash "^4.17.10"
     react "^16.4.2"
     react-dom "^16.4.2"
-
-react-navigation-plane@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-navigation-plane/-/react-navigation-plane-2.0.0.tgz#de426c0cfcef3b376583c65e3c7b10f126c03c60"
-  integrity sha512-W0wWPsuINWcJjT07hFwjet1Wh7xnjB9JV56pY4ykF6Ssa8JQvqYlC8fcH/pd08APLiiPJ3tzgTUhGT5z9T9mAw==
-  dependencies:
-    react-stateful-switch "0.2.1"
 
 react-navigation-plane@^2.0.1:
   version "2.0.1"
@@ -6484,10 +6477,10 @@ react-router@^4.3.1:
     prop-types "^15.6.1"
     warning "^4.0.1"
 
-react-sortable-hoc@^1.5.3:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-sortable-hoc/-/react-sortable-hoc-1.6.0.tgz#fd8a601c9d7d7902d3296dce980889d4c17fbf8b"
-  integrity sha512-mOxqkbx5FJ3bqr5zN08DRnZcURdHCVtmmKIqbu/DkFCDe2qrcoViDvAALx+rKd1GnUzTqqcjdHupyf01MgqzIw==
+react-sortable-hoc@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/react-sortable-hoc/-/react-sortable-hoc-1.6.1.tgz#2e9b551a7a1733201477571ad82608a7801309c6"
+  integrity sha512-ZIt3wjGeHQETMyv/dE9Wfk9a6T9IP9kGO++00vIiQkol+w7Gh6sUarBNWkGINgwYqwMWV0ALPAQdq4Ixwur8jw==
   dependencies:
     "@babel/runtime" "^7.2.0"
     invariant "^2.2.4"

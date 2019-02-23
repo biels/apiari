@@ -23,7 +23,7 @@ class HivePage extends Component<HivePageProps> {
                 }}
             </Entity>}
             subtitle={'Rusc'}
-            icon={'cube'}
+            // icon={'cube'}
             actions={[]}
             renderCustomHeaderArea={() => <Entity name={'hive'} fetchPolicy={'cache-only'} root>
                 {({ selectedItem: hive }) => {

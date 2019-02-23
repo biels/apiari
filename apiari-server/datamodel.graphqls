@@ -23,7 +23,7 @@ type Visit {
   child: Hive
 
   #Treatment
-  treatmentType: Treatment
+  treatmentType: TreatmentType
 
   #Feeding
   feedingType: FeedingType
@@ -35,7 +35,7 @@ type Visit {
 
 }
 
-type Treatment {
+type TreatmentType {
   id: ID! @unique
   name: String!
 }
