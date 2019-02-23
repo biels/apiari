@@ -4,6 +4,9 @@ import { EntityInfo } from 'react-entity-plane/src/types/entities';
 import { EntityFieldType } from 'react-entity-plane';
 import { visitDetail, visitMaster } from './fields/Visit';
 import { hiveDetail } from './fields/Hive';
+import { treatmentTypeDetail } from './fields/TreatmentType';
+import { feedingTypeDetail } from './fields/FeedingType';
+import { locationDetail } from './fields/Location';
 
 
 export const visitInfo: EntityInfo = {
@@ -19,16 +22,16 @@ export const visitInfo: EntityInfo = {
             name: 'hive',
             label: 'Rusc',
             type: EntityFieldType.relation,
-            required: true
+            required: true,
         },{
             name: 'date',
             label: 'Data',
             type: EntityFieldType.date,
-            required: true
+            required: true,
         },{
             name: 'comment',
             label: 'Comentari',
-            type: EntityFieldType.textarea
+            type: EntityFieldType.textarea,
         },{
             name: 'weight',
             label: 'Pes',
@@ -40,8 +43,8 @@ export const visitInfo: EntityInfo = {
             validation: {
                 decimals: 0,
                 max: 50,
-                min: 0
-            }
+                min: 0,
+            },
         },{
             name: 'breedFrames',
             label: 'Quadres de cria',
@@ -49,8 +52,8 @@ export const visitInfo: EntityInfo = {
             validation: {
                 decimals: 0,
                 max: 10,
-                min: 0
-            }
+                min: 0,
+            },
         },{
             name: 'extractedKg',
             label: 'Kg extrets',
@@ -58,8 +61,32 @@ export const visitInfo: EntityInfo = {
             validation: {
                 decimals: 0,
                 max: 60,
-                min: 0
-            }
+                min: 0,
+            },
+        },{
+            name: 'child',
+            label: 'Fill',
+            type: EntityFieldType.relation,
+        },{
+            name: 'treatmentType',
+            label: 'Tractament',
+            type: EntityFieldType.relation,
+        },{
+            name: 'feedingType',
+            label: 'Tipus d\'aliment',
+            type: EntityFieldType.relation,
+        },
+        {
+            name: 'feedingKg',
+            label: 'Kg d\'aliment',
+            type: EntityFieldType.number,
+            validation: {
+                max: 5,
+            },
+        },{
+            name: 'location',
+            label: 'Localització',
+            type: EntityFieldType.relation,
         },
     ],
     components: {
@@ -139,6 +166,86 @@ export const visitInfo: EntityInfo = {
                         ${hiveDetail}
                     `,
                     selector: 'visit.hive',
+                },
+            },
+        },
+        child: {
+            entityName: 'hive',
+            type: 'single',
+            queries: {
+                all: {
+                    query: gql`
+                        query ChildInVisit($id: ID) {
+                            visit(where: {id: $id}) {
+                                id
+                                child {
+                                    ...HiveDetail
+                                }
+                            }
+                        }
+                        ${hiveDetail}
+                    `,
+                    selector: 'visit.child',
+                },
+            },
+        },
+        treatmentType: {
+            entityName: 'treatmentType',
+            type: 'single',
+            queries: {
+                all: {
+                    query: gql`
+                        query TreatmentTypeInVisit($id: ID) {
+                            visit(where: {id: $id}) {
+                                id
+                                treatmentType {
+                                    ...TreatmentTypeDetail
+                                }
+                            }
+                        }
+                        ${treatmentTypeDetail}
+                    `,
+                    selector: 'visit.treatmentType',
+                },
+            },
+        },
+        feedingType: {
+            entityName: 'feedingType',
+            type: 'single',
+            queries: {
+                all: {
+                    query: gql`
+                        query FeedingTypeInVisit($id: ID) {
+                            visit(where: {id: $id}) {
+                                id
+                                feedingType {
+                                    ...FeedingTypeDetail
+                                }
+                            }
+                        }
+                        ${feedingTypeDetail}
+                    `,
+                    selector: 'visit.feedingType',
+                },
+            },
+        },
+        location: {
+            entityName: 'location',
+            type: 'single',
+            queries: {
+                all: {
+                    query: gql`
+                        query LocationInVisit($id: ID) {
+                            visit(where: {id: $id}) {
+                                id
+                                location {
+                                    ...LocationDetail
+                                }
+                            }
+                        }
+                        ${locationDetail}
+                    `,
+                    selector: 'visit.location',
                 },
             },
         },

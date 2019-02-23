@@ -13,6 +13,23 @@ export const visitMaster = gql`
         frames
         breedFrames
         extractedKg
+        child {
+            id
+            code
+        }
+        treatmentType {
+            id
+            name
+        }
+        feedingType{
+            id
+            name
+        }
+        feedingKg
+        location{
+            id
+            name
+        }
        
     }
 `;
@@ -29,6 +46,23 @@ export const visitDetail = gql`
         frames
         breedFrames
         extractedKg
+        child {
+            id
+            code
+        }
+        treatmentType {
+            id
+            name
+        }
+        feedingType{
+            id
+            name
+        }
+        feedingKg
+        location{
+            id
+            name
+        }
 
     }
 `;
