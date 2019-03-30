@@ -21,7 +21,7 @@ class VisitView extends Component<VisitViewProps> {
         return <EntityView {...this.props} wrapper={Container}>
             {(entity, mode, field, form) => {
                 return <React.Fragment>
-                    {field('name')}
+                    {field('date')}
                 </React.Fragment>;
             }}
         </EntityView>;

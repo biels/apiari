@@ -32,13 +32,14 @@ export const visitInfo: EntityInfo = {
             name: 'comment',
             label: 'Comentari',
             type: EntityFieldType.textarea,
+
         },{
             name: 'weight',
             label: 'Pes',
             type: EntityFieldType.number,
         },{
             name: 'frames',
-            label: 'Quadres',
+            label: 'Quadres abella',
             type: EntityFieldType.number,
             validation: {
                 decimals: 0,

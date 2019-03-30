@@ -6318,10 +6318,10 @@ react-apollo@^2.4.0:
     lodash.isequal "^4.5.0"
     prop-types "^15.6.0"
 
-react-c1@^1.5.33:
-  version "1.5.33"
-  resolved "https://registry.yarnpkg.com/react-c1/-/react-c1-1.5.33.tgz#ccb2d87c4a5a5e33c52b114a4c4856171e8279f2"
-  integrity sha512-HXb4KY29lDSrcsKP3/O4hAV4tNuUW5f6jWza9pi4aPal5/3UjOq3GtAtRrQPWsyKy9+qVPveCOYa5YZU56b3qQ==
+react-c1@^1.5.41:
+  version "1.5.41"
+  resolved "https://registry.yarnpkg.com/react-c1/-/react-c1-1.5.41.tgz#d2f818d9207b981bdfb8f8f261ffdb2b7b10e88d"
+  integrity sha512-GFANsdE4YKTISrqCEUw9YIZglNU1OHrh1ivi90alHIciHpG1hWXBELNdBA6f/sulWSi2BJras/Kv/NUEWffMyA==
   dependencies:
     "@blueprintjs/datetime" "^3.7.1"
     "@blueprintjs/select" "^3.6.1"
@@ -6333,7 +6333,7 @@ react-c1@^1.5.33:
     final-form-focus "^1.1.2"
     moment "^2.24.0"
     object-diff "^0.0.4"
-    react-entity-plane "^1.0.14"
+    react-entity-plane "^1.0.16"
     react-final-form "^4.0.2"
     react-final-form-listeners "^1.0.2"
     react-navigation-plane "^2.0.1"
@@ -6376,10 +6376,10 @@ react-dom@^16.4.2, react-dom@^16.6.3:
     prop-types "^15.6.2"
     scheduler "^0.11.2"
 
-react-entity-plane@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/react-entity-plane/-/react-entity-plane-1.0.14.tgz#d82d5e24f691e99aedd2411e49ec3ee1de57227f"
-  integrity sha512-S9JSXYDIOnTYrs/Nmxxxn6tTDkrZ8dc02Kqt0rL4GKibJPlfpI5LZnY+2x08IQ3MTA8DiA8X5KudSIoSnuXjvQ==
+react-entity-plane@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/react-entity-plane/-/react-entity-plane-1.0.16.tgz#f3dd9ce7ae74eb9f5c1b810b054679784067cb70"
+  integrity sha512-cupRuL0+h8Ttoc41gzMtyeshBUgirJcU+ByBhGuUFxijsC85QUSSduzEek6LXzVq9BcuTFGjttDSD/mNroVbVQ==
   dependencies:
     deep-object-diff "^1.1.0"
 
