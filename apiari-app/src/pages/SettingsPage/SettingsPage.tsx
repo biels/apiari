@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { TabsPage } from 'react-c1';
-import TicketTypesTab from './tabs/TicketTypesTab';
 import { page } from 'react-navigation-plane';
-import RenewalTypes from './tabs/RenewalTypes';
 import GeneralSettingsTab from './tabs/GeneralSettingsTab';
-import SubproductFamiliesTab from './tabs/SubproductFamiliesTab';
-import CommercialAgentTab from './tabs/CommercialAgentTab';
-import CompanyTab from './tabs/CompanyTab';
 
 export interface SettingsPageProps {
 

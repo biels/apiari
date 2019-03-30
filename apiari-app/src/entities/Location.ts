@@ -22,7 +22,7 @@ export const locationInfo: EntityInfo = {
         },
         {
             name: 'longitude',
-            label: 'Longitude',
+            label: 'Longitud',
             type: EntityFieldType.number
         },
     ],

@@ -32,6 +32,7 @@ class ApiariSidebar extends Component<ApiariSidebarProps> {
                     buttons={[
                         {iconName: 'home', tooltip: 'Inici', onClick: () => open('home')},
                         {iconName: 'dashboard', tooltip: 'Tauler de control', onClick: () => open('dashboard')},
+                        {iconName: 'cube', tooltip: 'Tots els ruscs', onClick: () => open('hives')},
                         {iconName: 'document', tooltip: 'Ruscs', onClick: () => open('hives')},
                         {iconName: 'database', tooltip: 'Fitxers auxiliars', onClick: () => open('files')},
                         {iconName: 'settings', tooltip: 'Configuració', onClick: () => open('settings')},
