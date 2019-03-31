@@ -14,7 +14,8 @@ export const feedingTypeInfo: EntityInfo = {
     fields: [
         {
             name: 'name',
-            label: 'Label',
+            label: 'Aliment',
+            required: true
         },
     ],
     components: {

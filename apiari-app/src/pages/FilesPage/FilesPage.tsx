@@ -5,6 +5,7 @@ import { TabsPage } from 'react-c1';
 import { Entity } from 'react-entity-plane';
 import LocationsView from '../views/LocationsView/LocationsView';
 import LocationsTab from './tabs/LocationsTab';
+import FeedingTypeTab from './tabs/FeedingTypeTab';
 
 export interface FilesPageProps {
 
@@ -39,7 +40,7 @@ class FilesPage extends Component<FilesPageProps> {
                     name: 'feedingTypes',
                     displayName: 'Tipus d\'aliments',
                     render: () => {
-                        return <LocationsTab/>;
+                        return <FeedingTypeTab/>;
                     },
                 },
 
