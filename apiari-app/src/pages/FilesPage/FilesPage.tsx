@@ -6,6 +6,7 @@ import { Entity } from 'react-entity-plane';
 import LocationsView from '../views/LocationsView/LocationsView';
 import LocationsTab from './tabs/LocationsTab';
 import FeedingTypeTab from './tabs/FeedingTypeTab';
+import TreatmentTypesTab from './tabs/TreatmentTypesTab';
 
 export interface FilesPageProps {
 
@@ -34,7 +35,7 @@ class FilesPage extends Component<FilesPageProps> {
                     name: 'treatmentTypes',
                     displayName: 'Tipus de tractaments',
                     render: () => {
-                        return <LocationsTab/>;
+                        return <TreatmentTypesTab/>;
                     },
                 },{
                     name: 'feedingTypes',
