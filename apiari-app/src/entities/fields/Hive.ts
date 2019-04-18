@@ -4,21 +4,32 @@ export const hiveMaster = gql`
     fragment HiveMaster on Hive{
         id
         code
-        comment
+        parent{
+            id
+            code
+        }
         createdAt
+        comment
         visits {
             id
         }
+       
     }
 `;
 export const hiveDetail = gql`
     fragment HiveDetail on Hive{
         id
         code
-        comment
+        parent{
+            id
+            code
+        }
         createdAt
+        comment
+        
         visits {
             id
         }
+       
     }
 `;

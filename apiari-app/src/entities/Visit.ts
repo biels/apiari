@@ -39,7 +39,7 @@ export const visitInfo: EntityInfo = {
             type: EntityFieldType.number,
         },{
             name: 'frames',
-            label: 'Quadres abella',
+            label: 'Abella',
             type: EntityFieldType.number,
             validation: {
                 decimals: 0,
@@ -48,7 +48,7 @@ export const visitInfo: EntityInfo = {
             },
         },{
             name: 'breedFrames',
-            label: 'Quadres de cria',
+            label: 'Cria',
             type: EntityFieldType.number,
             validation: {
                 decimals: 0,
@@ -57,7 +57,7 @@ export const visitInfo: EntityInfo = {
             },
         },{
             name: 'extractedKg',
-            label: 'Kg extrets',
+            label: 'Kg mel',
             type: EntityFieldType.number,
             validation: {
                 decimals: 0,

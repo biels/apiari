@@ -4,6 +4,8 @@ type Hive {
   createdAt: DateTime!
   comment: String
   visits: [Visit!]! @relation(name: "Visits")
+  parent: Hive
+
 }
 
 type Visit {

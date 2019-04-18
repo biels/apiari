@@ -21,16 +21,21 @@ export const hiveInfo: EntityInfo = {
             label: 'Codi',
             required: true,
             type: EntityFieldType.string
-        },{
-            name: 'comment',
-            label: 'Comentaris',
-            type: EntityFieldType.textarea
+        }, {
+            name: 'parent',
+            label: 'Origen',
+            type: EntityFieldType.relation
         },{
             name: 'createdAt',
             label: 'Data de creació',
             type: EntityFieldType.date,
             create: false
-        },
+        },{
+            name: 'comment',
+            label: 'Comentaris',
+            type: EntityFieldType.textarea
+        }
+,
     ],
     components: {
         create: HiveView,
@@ -109,6 +114,26 @@ export const hiveInfo: EntityInfo = {
                         ${visitMaster}
                     `,
                     selector: 'hive.visits',
+                },
+            },
+        },
+        parent: {
+            entityName: 'hive',
+            type: 'single',
+            queries: {
+                all: {
+                    query: gql`
+                        query ParentInHive($id: ID) {
+                            hive(where: {id: $id}) {
+                                id
+                                parent {
+                                    ...HiveDetail
+                                }
+                            }
+                        }
+                        ${hiveDetail}
+                    `,
+                    selector: 'hive.parent',
                 },
             },
         },

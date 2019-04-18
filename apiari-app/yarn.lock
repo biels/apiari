@@ -6318,10 +6318,10 @@ react-apollo@^2.4.0:
     lodash.isequal "^4.5.0"
     prop-types "^15.6.0"
 
-react-c1@^1.5.41:
-  version "1.5.41"
-  resolved "https://registry.yarnpkg.com/react-c1/-/react-c1-1.5.41.tgz#d2f818d9207b981bdfb8f8f261ffdb2b7b10e88d"
-  integrity sha512-GFANsdE4YKTISrqCEUw9YIZglNU1OHrh1ivi90alHIciHpG1hWXBELNdBA6f/sulWSi2BJras/Kv/NUEWffMyA==
+react-c1@^1.5.43:
+  version "1.5.43"
+  resolved "https://registry.yarnpkg.com/react-c1/-/react-c1-1.5.43.tgz#c0bde67e07b064db1710872652857e4932d8b8c3"
+  integrity sha512-Xn5dnAcuMFoOpNiORRf2Qksce8xlOAQtyypbhsEiJJY0d5LKc3oj5i1vE6MZ1HxH+rBb53ziJoRURTWA050iCw==
   dependencies:
     "@blueprintjs/datetime" "^3.7.1"
     "@blueprintjs/select" "^3.6.1"

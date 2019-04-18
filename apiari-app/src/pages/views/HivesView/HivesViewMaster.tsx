@@ -27,6 +27,13 @@ class HivesViewMaster extends Component<CentersViewMasterProps> {
             baseNegativeOffset={170}
             height={'90vh'}
             columnDefs={[
+                {field:"code",width:80},
+                {field:'parent',width:90},
+                {field:"createdAt",width:120},
+                {field:"comment",width:900},
+
+
+
 
             ]}
             frameworkComponents={{}}

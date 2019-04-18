@@ -17,6 +17,17 @@ class VisitsViewMaster extends Component<VisitsViewMasterProps> {
             baseNegativeOffset={170}
             height={'90vh'}
             columnDefs={[
+                {field:'hive',width:90},
+                {field:'date',width:130},
+                {field:'weight',width:80},
+                {field:'frames',width:80},
+                {field:'breedFrames',width:70},
+                {field:'extractedKg',width:90},
+                {field:'child',width:90},
+                {field:'treatmentType',width:120},
+                {field:'feedingType',width:100},
+                {field:'feedingKg',width:90},
+                {field:'location',width:100},
 
             ]}
             frameworkComponents={{}}
