@@ -65,10 +65,6 @@ export const visitInfo: EntityInfo = {
                 min: 0,
             },
         },{
-            name: 'child',
-            label: 'Fill',
-            type: EntityFieldType.relation,
-        },{
             name: 'treatmentType',
             label: 'Tractament',
             type: EntityFieldType.relation,
@@ -88,7 +84,7 @@ export const visitInfo: EntityInfo = {
             name: 'location',
             label: 'Localització',
             type: EntityFieldType.relation,
-        },
+        }
     ],
     components: {
         create: VisitView,

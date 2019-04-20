@@ -25,11 +25,40 @@ class HivePage extends Component<HivePageProps> {
             subtitle={'Rusc'}
             // icon={'cube'}
             actions={[]}
-            renderCustomHeaderArea={() => <Entity name={'hive'} fetchPolicy={'cache-only'} root>
-                {({ selectedItem: hive }) => {
-                    return <div/>;
-                }}
-            </Entity>}
+            attributes={[
+                {name: 'Visites', value: <Entity name={'hive'} fetchPolicy={'cache-only'} root>
+                        {() => {
+                            return <Entity relation={'visits'}>
+                                {({items}) => {
+                                    return items.length
+                                }}
+                            </Entity>
+                        }}
+                    </Entity>, unit: 'visites'},
+                {name: 'U. Localització', value: <Entity name={'hive'} fetchPolicy={'cache-only'} root>
+                        {() => {
+                            return <Entity relation={'visits'}>
+                                {({items}) => {
+                                    return _.get(_.last(items), 'location.name', 'desconeguda')
+                                }}
+                            </Entity>
+                        }}
+                    </Entity>},
+                {name: 'Total kg mel', value: <Entity name={'hive'} fetchPolicy={'cache-only'} root>
+                        {() => {
+                            return <Entity relation={'visits'}>
+                                {({items}) => {
+                                    return _.sum(items.map(it => _.get(it, 'extractedKg', 0)))
+                                }}
+                            </Entity>
+                        }}
+                    </Entity>, unit: 'kg'}
+                ]}
+            // renderCustomHeaderArea={() => <Entity name={'hive'} fetchPolicy={'cache-only'} root>
+            //     {({ selectedItem: hive }) => {
+            //         return <div/>;
+            //     }}
+            // </Entity>}
             tabs={[
                 {
                     name: 'visits',

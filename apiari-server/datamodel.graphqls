@@ -5,6 +5,8 @@ type Hive {
   comment: String
   visits: [Visit!]! @relation(name: "Visits")
   parent: Hive
+  location: Location
+  blocks:String
 
 }
 
@@ -23,9 +25,6 @@ type Visit {
 
   #Extraction
   extractedKg: Float
-
-  #Dvision
-  child: Hive @relation(name: "ChildsInVisit")
 
   #Treatment
   treatmentType: TreatmentType

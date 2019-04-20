@@ -4,6 +4,7 @@ import { EntityInfo } from 'react-entity-plane/src/types/entities';
 import { EntityFieldType } from 'react-entity-plane';
 import { hiveDetail, hiveMaster } from './fields/Hive';
 import { visitMaster } from './fields/Visit';
+import { locationDetail } from './fields/Location';
 
 
 export const hiveInfo: EntityInfo = {
@@ -26,6 +27,10 @@ export const hiveInfo: EntityInfo = {
             label: 'Origen',
             type: EntityFieldType.relation
         },{
+            name: 'location',
+            label: 'Localització',
+            type: EntityFieldType.relation
+        },{
             name: 'createdAt',
             label: 'Data de creació',
             type: EntityFieldType.date,
@@ -34,6 +39,10 @@ export const hiveInfo: EntityInfo = {
             name: 'comment',
             label: 'Comentaris',
             type: EntityFieldType.textarea
+        },{
+            name: 'blocks',
+            label: 'Blocs',
+            type: EntityFieldType.string
         }
 ,
     ],
@@ -134,6 +143,26 @@ export const hiveInfo: EntityInfo = {
                         ${hiveDetail}
                     `,
                     selector: 'hive.parent',
+                },
+            },
+        },
+        location: {
+            entityName: 'location',
+            type: 'single',
+            queries: {
+                all: {
+                    query: gql`
+                        query LocationInHive($id: ID) {
+                            hive(where: {id: $id}) {
+                                id
+                                location {
+                                    ...LocationDetail
+                                }
+                            }
+                        }
+                        ${locationDetail}
+                    `,
+                    selector: 'hive.location',
                 },
             },
         },

@@ -13,7 +13,11 @@ export const hiveMaster = gql`
         visits {
             id
         }
-       
+       location {
+           id
+           name
+       }
+        blocks
     }
 `;
 export const hiveDetail = gql`
@@ -30,6 +34,10 @@ export const hiveDetail = gql`
         visits {
             id
         }
-       
+        location {
+            id
+            name
+        }
+        blocks
     }
 `;

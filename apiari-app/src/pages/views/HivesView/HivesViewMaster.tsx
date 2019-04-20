@@ -29,7 +29,7 @@ class HivesViewMaster extends Component<CentersViewMasterProps> {
             columnDefs={[
                 {field:"code",width:80},
                 {field:'parent',width:90},
-                {field:"createdAt",width:120},
+                {field:"location",width:120},
                 {field:"comment",width:900},
 
 

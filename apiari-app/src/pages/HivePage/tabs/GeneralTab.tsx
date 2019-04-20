@@ -3,6 +3,7 @@ import _ from 'lodash';
 import HiveView from '../../../entities/components/HiveView';
 import { Entity } from 'react-entity-plane';
 import styled from 'styled-components';
+import HiveRenderer from '../../common/HiveRenderer';
 
 
 const Container = styled.div`
@@ -18,13 +19,14 @@ export interface GeneralTabProps {
 
 class GeneralTab extends Component<GeneralTabProps> {
     render() {
-        return <Container>
-            <Entity name={'hive'} root>
-                {(entity) => {
-                    return <HiveView entity={entity} editing/>;
-                }}
-            </Entity>
-        </Container>;
+        return <Entity name={'hive'} root>
+            {(entity) => {
+                return <Container>
+                    <HiveView entity={entity} editing/>
+                    <HiveRenderer blocks={entity.selectedItem.blocks}/>
+                </Container>;
+            }}
+        </Entity>;
     }
 }
 

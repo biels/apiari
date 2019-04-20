@@ -9,6 +9,7 @@ export const locationInfo: EntityInfo = {
     display: {
         singular: 'Ubicació',
         plural: 'Ubicacions',
+        icon: 'locate'
     },
     fields: [
         {
