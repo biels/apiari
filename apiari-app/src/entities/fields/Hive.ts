@@ -17,7 +17,9 @@ export const hiveMaster = gql`
            id
            name
        }
+       active
         blocks
+        
     }
 `;
 export const hiveDetail = gql`
@@ -38,6 +40,7 @@ export const hiveDetail = gql`
             id
             name
         }
+        active
         blocks
     }
 `;

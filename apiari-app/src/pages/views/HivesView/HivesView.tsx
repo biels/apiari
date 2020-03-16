@@ -35,6 +35,7 @@ class HivesView extends Component<HivesViewProps> {
                     renderDetailView={({ entity }) => {
                         return <HivesViewDetail/>;
                     }}
+
                 />;
             }}
         </NavigationSpy>;

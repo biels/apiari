@@ -38,15 +38,7 @@ export const visitInfo: EntityInfo = {
             label: 'Pes',
             type: EntityFieldType.number,
         },{
-            name: 'frames',
-            label: 'Abella',
-            type: EntityFieldType.number,
-            validation: {
-                decimals: 0,
-                max: 50,
-                min: 0,
-            },
-        },{
+
             name: 'breedFrames',
             label: 'Cria',
             type: EntityFieldType.number,
@@ -84,7 +76,12 @@ export const visitInfo: EntityInfo = {
             name: 'location',
             label: 'Localització',
             type: EntityFieldType.relation,
-        }
+        },{
+            name: 'blocks',
+            label: 'Blocs',
+            type: EntityFieldType.string
+        },
+
     ],
     components: {
         create: VisitView,
@@ -166,26 +163,7 @@ export const visitInfo: EntityInfo = {
                 },
             },
         },
-        child: {
-            entityName: 'hive',
-            type: 'single',
-            queries: {
-                all: {
-                    query: gql`
-                        query ChildInVisit($id: ID) {
-                            visit(where: {id: $id}) {
-                                id
-                                child {
-                                    ...HiveDetail
-                                }
-                            }
-                        }
-                        ${hiveDetail}
-                    `,
-                    selector: 'visit.child',
-                },
-            },
-        },
+
         treatmentType: {
             entityName: 'treatmentType',
             type: 'single',

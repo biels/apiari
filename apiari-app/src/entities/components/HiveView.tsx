@@ -4,11 +4,15 @@ import _ from 'lodash';
 import { EntityView } from 'react-c1';
 import { EntityViewProps } from 'react-c1/src/layout/EntityView';
 import HiveRenderer from '../../pages/common/HiveRenderer';
+import { Entity } from 'react-entity-plane';
 
 
 const Container = styled.div`
     display: grid;
     
+`;
+const CodeContainer = styled.div`
+    width: 100px;
 `;
 const TopContainer = styled.div`
         display: grid;
@@ -25,21 +29,23 @@ export interface HiveViewProps extends EntityViewProps{
 
 class HiveView extends Component<HiveViewProps> {
     render() {
-        return <EntityView {...this.props} wrapper={Container}>
+        return <EntityView {...this.props} wrapper={Container} disableAutoAppend>
             {(entity, mode, field, form) => {
                 return <React.Fragment>
-                    <TopContainer>
-                        <HiveRenderer blocks={entity.selectedItem.blocks}/>
-                        <div>
-                            {field('code')}
-                            {field('parent')}
-                            {field('location')}
-                            {field('createdAt')}
-                        </div>
-                    </TopContainer>
+                    <CodeContainer>
+                    {field('code')}
+                    </CodeContainer>
+                    {field('location')}
+                    {field('parent')}
+                    <CodeContainer>
+                    {field('createdAt')}
+                    </CodeContainer>
+                    {field('comment')},
+                    <CodeContainer>
+                    {field('active')}
+                    </CodeContainer>
 
-                    {field('comment')}
-                    {field('blocks')}
+
                 </React.Fragment>;
             }}
         </EntityView>;

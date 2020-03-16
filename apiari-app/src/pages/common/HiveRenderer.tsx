@@ -33,20 +33,20 @@ const InnerContainer = styled.div`
 `;
 const AlcaContainer = styled.div`
     height: 60px;
-    background-color: gold;
+    background-color:  SlateBlue;
 `;
 const MitjaAlcaContainer = styled.div`
     height: 30px;
-    background-color: gold;
+    background-color: SlateBlue;
 `;
 const ExcluidorContainer = styled.div`
-    height: 5px;
-    background-color: darkred;
+    height: 3px;
+    background-color: rgb(200, 100, 100);
 `;
 let componentMap = {
-    '0': AlcaContainer,
-    '1': MitjaAlcaContainer,
-    '2': ExcluidorContainer,
+    'c': AlcaContainer,
+    'a': MitjaAlcaContainer,
+    'e': ExcluidorContainer
 };
 
 interface HiveRendererProps {

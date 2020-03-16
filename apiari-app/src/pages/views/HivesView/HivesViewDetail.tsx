@@ -5,6 +5,7 @@ import {Entity} from 'react-entity-plane';
 import { Intent, NonIdealState, Tag } from '@blueprintjs/core';
 import { clientDisplayName } from '../../../application/utils';
 import HiveView from '../../../entities/components/HiveView';
+import HiveRenderer from '../../common/HiveRenderer';
 
 
 const Container = styled.div`
@@ -39,10 +40,26 @@ export interface CentersViewDetailProps {
 
 class HivesViewDetail extends Component<CentersViewDetailProps> {
     render() {
+
         return <Entity>
             {(entity) => {
                 return <Container>
                     <HiveView entity={entity} editing/>
+                    <Entity>
+                        {() => {
+                            return <Entity relation={'visits'}>
+                                {(e) => {
+                                    let lastVisit = _.last(e.items);
+                                    let blocks = lastVisit.blocks ;
+                                    let blocksArray: string[] = e.items.map(v => v.blocks);
+                                    let lastUseful = _.last(blocksArray.filter(s => s != null && s.length > 0));
+                                    return <pre>
+                                        <HiveRenderer blocks={lastUseful}/>
+                                    </pre>;
+                                }}
+                            </Entity>
+                        }}
+                    </Entity>
                 </Container>
             }}
         </Entity>
@@ -50,3 +67,4 @@ class HivesViewDetail extends Component<CentersViewDetailProps> {
 }
 
 export default HivesViewDetail;
+

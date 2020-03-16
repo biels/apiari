@@ -9,7 +9,8 @@ import ApiariSidebar from './application/ApiariSidebar';
 import { NavigationTabRenderer } from 'react-navigation-plane';
 
 const Container = styled.div`
-    background-color: #f5f8fa;
+   
+    background-color: lightGray;
     height: 100vh;
     max-height: 100vh;
     min-height: 100vh;

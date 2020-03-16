@@ -15,6 +15,7 @@ class HivesPage extends Component<HivesPageProps> {
             title={'Ruscs'}
             subtitle={'Tots els ruscs'}
             icon={'cube'}
+
             renderCustomHeaderArea={() => {
                 return <Entity name={'hive'}>
                     {(entity) => {

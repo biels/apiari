@@ -40,6 +40,12 @@ export const hiveInfo: EntityInfo = {
             label: 'Comentaris',
             type: EntityFieldType.textarea
         },{
+            name: 'active',
+            label: 'Actiu',
+            type: EntityFieldType.enum,
+            values: [{value: true, display: "Actiu", intent: 'success', showThrough: true, icon: "tick"}, {value: false, display: "Inactiu"}],
+
+        },{
             name: 'blocks',
             label: 'Blocs',
             type: EntityFieldType.string

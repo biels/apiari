@@ -39,6 +39,7 @@ class HivePage extends Component<HivePageProps> {
                         {() => {
                             return <Entity relation={'visits'}>
                                 {({items}) => {
+
                                     return _.get(_.last(items), 'location.name', 'desconeguda')
                                 }}
                             </Entity>

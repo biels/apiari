@@ -19,7 +19,6 @@ class VisitsViewMaster extends Component<VisitsViewMasterProps> {
             height={'90vh'}
             columnDefs={[
                 // {field:'hive',width:90}
-                {field:'location',width:100},
                 {field:'date',width:130},
                 {field:'weight',width:80},
                 {field:'frames',width:80},
@@ -28,18 +27,16 @@ class VisitsViewMaster extends Component<VisitsViewMasterProps> {
                 {field:'treatmentType',width:120},
                 {field:'feedingType',width:120},
                 {field:'feedingKg',width:100},
+                {field:'comment',width:300},
 
-                {field:'comment',width:200},
 
 
             ]}
             frameworkComponents={{}}
             actions={(entity) => [
                 { name: 'refresh', text: 'Refresca' },
-                {
-                    name: 'open', text: 'Detalls',
-                    callback: () => entity.openInOwnPage(entity.selectedItem.id as number, {}, true),
-                },
+                { name: 'open', text: 'Detalls',
+                    callback: () => entity.openInOwnPage(entity.selectedItem.id as number, {}, true), },
                 { name: 'new'},
                 { name: 'remove'},
 

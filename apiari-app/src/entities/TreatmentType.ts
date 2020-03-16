@@ -10,6 +10,7 @@ export const treatmentTypeInfo: EntityInfo = {
     display: {
         singular: 'Tipus de tractament',
         plural: 'Tipus de tractaments',
+        gender:true,
         render: t => t.name
     },
     fields: [

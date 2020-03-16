@@ -7,6 +7,7 @@ import HivesViewDetail from '../HivesView/HivesViewDetail';
 import { NavigationSpy } from 'react-navigation-plane';
 import { MasterDetailView } from 'react-c1';
 import VisitsViewMaster from './VisitsViewMaster';
+import VisitsViewDetail from './VisitsViewDetail';
 
 export interface VisitsViewProps {
     hive?: EntityRenderProps
@@ -27,7 +28,7 @@ class VisitsView extends Component<VisitsViewProps> {
                         return <VisitsViewMaster entity={entity} associate={this.props.hive} isGeneralView={isGeneralView}/>;
                     }}
                     renderDetailView={({ entity }) => {
-                        return <HivesViewDetail entity={entity}/>;
+                        return <VisitsViewDetail />;
                     }}
                 />;
             }}

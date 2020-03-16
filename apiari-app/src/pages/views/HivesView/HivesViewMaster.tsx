@@ -13,6 +13,11 @@ const ActiveFilterContainer = styled.div`
       margin-bottom: 0px;
     }
 `;
+const ActiveContainer = styled.div`
+    padding: 2px;
+    background-color: lightgreen;
+    
+`;
 
 export interface CentersViewMasterProps {
     associate: EntityRenderProps
@@ -21,21 +26,29 @@ export interface CentersViewMasterProps {
 }
 
 class HivesViewMaster extends Component<CentersViewMasterProps> {
+    state = {
+        activeFilter: null
+    }
     render() {
         return <EntityGrid
             associate={this.props.associate}
             baseNegativeOffset={170}
-            height={'90vh'}
+            height={'103vh'}
             columnDefs={[
                 {field:"code",width:80},
                 {field:'parent',width:90},
                 {field:"location",width:120},
-                {field:"comment",width:900},
-
-
-
+                {field:"comment",width:500},
+                {field:"active",width:500, valueGetter: (params) => {
+                        return params.data.active  ? 'a' : 'i';
+                    },
+                    cellRenderer: params => {
+                    return params.value === "a" ? "Actiu" : "Inactiu"
+                    }
+                }
 
             ]}
+            disableAutoAppend
             frameworkComponents={{}}
             actions={(entity) => [
                 { name: 'refresh', text: 'Refresca' },
@@ -47,6 +60,9 @@ class HivesViewMaster extends Component<CentersViewMasterProps> {
                 { name: 'remove'},
 
             ]}
+            renderCustomFilterBar={() => <div>Filtre actius</div>}
+
+            doesExternalFilterPass={() => { return true}}
         />;
     }
 }

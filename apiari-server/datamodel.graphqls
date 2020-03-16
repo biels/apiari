@@ -6,6 +6,7 @@ type Hive {
   visits: [Visit!]! @relation(name: "Visits")
   parent: Hive
   location: Location
+  active:Boolean
   blocks:String
 
 }
@@ -35,6 +36,12 @@ type Visit {
 
   #Location
   location: Location
+
+  #Blocks
+  blocks:String
+
+  #Parent
+  parent: Hive @relation(name: "ParentHive")
 
 
 }

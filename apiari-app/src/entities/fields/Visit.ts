@@ -10,7 +10,6 @@ export const visitMaster = gql`
         date
         comment
         weight
-        frames
         breedFrames
         extractedKg
       
@@ -27,6 +26,7 @@ export const visitMaster = gql`
             id
             name
         }
+        blocks
        
     }
 `;
@@ -40,13 +40,9 @@ export const visitDetail = gql`
         date
         comment
         weight
-        frames
         breedFrames
         extractedKg
-        child {
-            id
-            code
-        }
+     
         treatmentType {
             id
             name
@@ -60,6 +56,7 @@ export const visitDetail = gql`
             id
             name
         }
+        blocks
 
     }
 `;
