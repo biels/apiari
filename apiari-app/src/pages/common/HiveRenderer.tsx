@@ -55,7 +55,7 @@ interface HiveRendererProps {
 
 class HiveRenderer extends Component<HiveRendererProps> {
     render() {
-        if (this.props.blocks == null || this.props.blocks === '') return null;
+        if (this.props.blocks == null || this.props.blocks === '0') return null;
         let blockList = _.reverse(this.props.blocks.split(''));
         return (
             <Container>
