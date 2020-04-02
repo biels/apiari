@@ -37,7 +37,9 @@ class HivesViewMaster extends Component<CentersViewMasterProps> {
             columnDefs={[
                 {field:"code",width:80},
                 {field:'parent',width:90},
-                {field:"location",width:120},
+                {field:"location",width:120, valueGetter: (params) => {
+                    return  (_.last(params.data.visits ) as any).location;
+                    }},
                 {field:"comment",width:500},
                 {field:"active",width:500, valueGetter: (params) => {
                         return params.data.active  ? 'a' : 'i';

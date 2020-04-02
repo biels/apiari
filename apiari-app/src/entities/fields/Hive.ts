@@ -12,6 +12,10 @@ export const hiveMaster = gql`
         comment
         visits {
             id
+            location {
+                id
+                name
+            }
         }
        location {
            id
@@ -32,9 +36,13 @@ export const hiveDetail = gql`
         }
         createdAt
         comment
-        
+
         visits {
             id
+            location {
+                id
+                name
+            }
         }
         location {
             id
