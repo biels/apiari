@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import _ from 'lodash';
-import { Icon, Intent, Radio, RadioGroup, Tag } from '@blueprintjs/core';
+import { Button, ButtonGroup, Icon, Intent, Radio, RadioGroup, Tag } from '@blueprintjs/core';
 import { EntityGrid } from 'react-c1';
 import { EntityRenderProps } from 'react-entity-plane';
 
@@ -27,7 +27,7 @@ export interface CentersViewMasterProps {
 
 class HivesViewMaster extends Component<CentersViewMasterProps> {
     state = {
-        activeFilter: null
+        activeFilter: 'active'
     }
     render() {
         return <EntityGrid
@@ -62,9 +62,21 @@ class HivesViewMaster extends Component<CentersViewMasterProps> {
                 { name: 'remove'},
 
             ]}
-            renderCustomFilterBar={() => <div>Filtre actius</div>}
+            renderCustomFilterBar={() => {
+                return <div>
+                    <ButtonGroup>
+                        <Button onClick={() => this.setState({activeFilter: 'active'})} active={this.state.activeFilter === 'active'}>Actius</Button>
+                        <Button onClick={() => this.setState({activeFilter: 'inactive'})} active={this.state.activeFilter === 'inactive'}>Inactius</Button>
+                        <Button onClick={() => this.setState({activeFilter: 'all'})} active={this.state.activeFilter === 'all'}>Tots</Button>
+                    </ButtonGroup>
+                </div>;
+            }}
 
-            doesExternalFilterPass={() => { return true}}
+            doesExternalFilterPass={(filter, node) => {
+               if(this.state.activeFilter === 'active') return node.data.active
+               if(this.state.activeFilter === 'inactive') return !node.data.active
+                return true
+            }}
         />;
     }
 }
