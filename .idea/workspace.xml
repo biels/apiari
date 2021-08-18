@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6650fa60-dc15-4459-b82c-2ae7fc43484d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/entities/TreatmentType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/entities/TreatmentType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/entities/Visit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/entities/Visit.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/entities/components/HiveView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/entities/components/HiveView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/entities/components/VisitView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/entities/components/VisitView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/entities/fields/Visit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/entities/fields/Visit.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/pages/HivePage/HivePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/pages/HivePage/HivePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/pages/common/HiveRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/pages/common/HiveRenderer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/pages/views/HivesView/HivesViewMaster.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/pages/views/HivesView/HivesViewMaster.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/pages/views/VisitsView/VisitsView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/pages/views/VisitsView/VisitsView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-app/src/pages/views/VisitsView/VisitsViewMaster.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-app/src/pages/views/VisitsView/VisitsViewMaster.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiari-server/datamodel.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/apiari-server/datamodel.graphqls" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="195" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="apiari" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apiari" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apiari-app" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6650fa60-dc15-4459-b82c-2ae7fc43484d" name="Default Changelist" comment="" />
+      <created>1549739373576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549739373576</updated>
+      <workItem from="1549739374667" duration="34000" />
+      <workItem from="1563472989419" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="57000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="195" y="24" width="1301" height="1056" extended-state="4" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960877" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

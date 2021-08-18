@@ -35,20 +35,34 @@ class HivesViewMaster extends Component<CentersViewMasterProps> {
             baseNegativeOffset={170}
             height={'103vh'}
             columnDefs={[
+
                 {field:"code",width:80},
                 {field:'parent',width:90},
-                {field:"location",width:120, valueGetter: (params) => {
-                    return  (_.last(params.data.visits ) as any).location;
-                    }},
-                {field:"comment",width:500},
-                {field:"active",width:500, valueGetter: (params) => {
+                {field:"location",width:120,
+                    valueGetter: (params) => {
+                    return  (_.last(params.data.visits ) as any || {}).location;
+                    },
+                    filterValueGetter: (params) => {
+                        let location1 = (_.last(params.data.visits) as any || {}).location;
+                        // console.log(`location1`, location1);
+                        if(location1 == null) return ''; DragEvent
+                        return  location1.name;
+                    }
+                    },
+
+                {field:"comment",width:300},
+
+                {field:"active",width:100, valueGetter: (params) => {
                         return params.data.active  ? 'a' : 'i';
                     },
+
+
                     cellRenderer: params => {
                     return params.value === "a" ? "Actiu" : "Inactiu"
                     }
-                }
 
+                },
+                {field:"treatmentType",width:90}
             ]}
             disableAutoAppend
             frameworkComponents={{}}

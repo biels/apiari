@@ -42,4 +42,3 @@ export const client = new ApolloClient({
     ]),
     cache: cache
 });
-

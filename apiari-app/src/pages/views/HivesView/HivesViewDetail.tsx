@@ -50,6 +50,7 @@ class HivesViewDetail extends Component<CentersViewDetailProps> {
                             return <Entity relation={'visits'}>
                                 {(e) => {
                                     let lastVisit = _.last(e.items);
+                                    if(lastVisit == null) return <div>No hi ha cap visita</div>
                                     let blocks = lastVisit.blocks ;
                                     let blocksArray: string[] = e.items.map(v => v.blocks);
                                     let lastUseful = _.last(blocksArray.filter(s => s != null && s.length > 0));

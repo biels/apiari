@@ -9,6 +9,6 @@ export const treatmentTypeMaster = gql`
 export const treatmentTypeDetail = gql`
     fragment TreatmentTypeDetail on TreatmentType{
         id
-name
+        name
     }
 `;

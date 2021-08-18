@@ -35,7 +35,7 @@ class HiveView extends Component<HiveViewProps> {
                     <CodeContainer>
                     {field('code')}
                     </CodeContainer>
-                    {field('location')}
+                    {/*{field('location')}*/}
                     {field('parent')}
                     <CodeContainer>
                     {field('createdAt')}

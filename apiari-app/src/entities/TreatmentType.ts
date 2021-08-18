@@ -8,8 +8,8 @@ import { treatmentTypeDetail, treatmentTypeMaster } from './fields/TreatmentType
 export const treatmentTypeInfo: EntityInfo = {
     name: 'treatmentType',
     display: {
-        singular: 'Tipus de tractament',
-        plural: 'Tipus de tractaments',
+        singular: 'tractament',
+        plural: 'tractaments',
         gender:true,
         render: t => t.name
     },
